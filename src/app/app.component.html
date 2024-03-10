@@ -1,11 +1,11 @@
-<google-map height="800px"
- width="2000px"
-  [center]="center"
-   [zoom]="zoom"
-   (mapClick)="moveMap($event)"
-  (mapMousemove)="move($event)" [options]="mapOptions">
-<map-marker [position]="marker.position"></map-marker>
-
+<google-map
+ height="800px" 
+ width="2000px"  
+ (mapMousemove)="move($event)" 
+ [options]="mapOptions">
 </google-map>
+
 <div>Latitude: {{display?.lat}}</div>
 <div>Longitude: {{display?.lng}}</div>
+
+
